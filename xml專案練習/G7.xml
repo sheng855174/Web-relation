@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="G7.xsl"?>
+<!DOCTYPE G7:studentList [
+	<!ELEMENT G7:studentList (G7:student*)>
+	<!ATTLIST G7:studentList
+		xmlns:G7 CDATA #FIXED "http://g7.xml.csie.mcu.edu.tw"
+	>
+	<!ELEMENT G7:student (G7:name, G7:birthday?, G7:department, G7:schedule, G7:expertise*)>
+	<!ATTLIST G7:student
+		id CDATA #REQUIRED	
+		sex CDATA #REQUIRED	
+		blood CDATA #REQUIRED	
+		personality CDATA #IMPLIED
+	>
+	<!ELEMENT G7:name (G7:firstname, G7:lastname)>
+	<!ELEMENT G7:firstname (#PCDATA)>
+	<!ELEMENT G7:lastname (#PCDATA)>
+	<!ELEMENT G7:birthday EMPTY>
+	<!ATTLIST G7:birthday
+		year CDATA #REQUIRED	
+		month CDATA #REQUIRED	
+		day CDATA #REQUIRED
+	>
+	<!ELEMENT G7:department (#PCDATA)>
+	<!ATTLIST G7:department
+		grade CDATA #REQUIRED
+	>
+	<!ELEMENT G7:schedule (G7:course+)>
+	<!ELEMENT G7:course (G7:teacher, G7:source*)>
+	<!ATTLIST G7:course
+		id CDATA #REQUIRED	
+		classroom CDATA #REQUIRED	
+		credit CDATA #IMPLIED
+	>
+	<!ELEMENT G7:teacher (#PCDATA)>
+	<!ELEMENT G7:source (#PCDATA)>
+	<!ELEMENT G7:expertise (#PCDATA)>
+]>
+<!--學生資訊系統-->
+<G7:studentList xmlns:G7="http://g7.xml.csie.mcu.edu.tw">
+	<G7:student id="mcu04360092" sex="男" blood="O型" personality="善良">
+		<G7:name>
+			<G7:firstname>陳</G7:firstname>
+			<G7:lastname>昇昇</G7:lastname>
+		</G7:name>
+		<G7:birthday year="1997" month="2" day="29"/>
+		<G7:department grade="2">資訊工程學系</G7:department>
+		<!--個人課程表-->
+		<G7:schedule>
+			<G7:course id="C語言" classroom="EE301" credit="2">
+				<G7:teacher>楊健貴</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="XML" classroom="EE302" credit="3">
+				<G7:teacher>王豐緒</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="JAVA" classroom="EE303" credit="1">
+				<G7:teacher>王豐緒</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+		</G7:schedule>
+		<!--專長-->
+		<G7:expertise>打羽球</G7:expertise>
+		<G7:expertise>寫程式</G7:expertise>
+	</G7:student>
+	<G7:student id="mcu04369487" sex="男" blood="A型" personality="8+9">
+		<G7:name>
+			<G7:firstname>趙</G7:firstname>
+			<G7:lastname>俊彥</G7:lastname>
+		</G7:name>
+		<G7:birthday year="1995" month="5" day="4"/>
+		<G7:department grade="1">資訊工程學系</G7:department>
+		<!--個人課程表-->
+		<G7:schedule>
+			<G7:course id="C語言" classroom="EE301" credit="2">
+				<G7:teacher>楊健貴</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="XML" classroom="EE302" credit="3">
+				<G7:teacher>王豐緒</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="CPE研習" classroom="S304" credit="1">
+				<G7:teacher>李遠坤</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+		</G7:schedule>
+		<!--專長-->
+		<G7:expertise>睡覺</G7:expertise>
+		<G7:expertise>開戰車</G7:expertise>
+	</G7:student>
+	<G7:student id="mcu01234567" sex="女" blood="O型" personality="溫和">
+		<G7:name>
+			<G7:firstname>林</G7:firstname>
+			<G7:lastname>思妤</G7:lastname>
+		</G7:name>
+		<G7:birthday year="1995" month="5" day="4"/>
+		<G7:department grade="2">應用英文學系</G7:department>
+		<!--個人課程表-->
+		<G7:schedule>
+			<G7:course id="多媒體" classroom="S513" credit="3">
+				<G7:teacher>楊健貴</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="XML" classroom="EE302" credit="3">
+				<G7:teacher>王豐緒</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+			<G7:course id="英文" classroom="EE208" credit="0">
+				<G7:teacher>劉哲銘</G7:teacher>
+				<G7:source>80</G7:source>
+			</G7:course>
+		</G7:schedule>
+		<!--專長-->
+		<G7:expertise>游泳</G7:expertise>
+	</G7:student>
+</G7:studentList>

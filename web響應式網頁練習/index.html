@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<html>
+
+<head>
+<style>
+body
+{
+	background-image:url("abc.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
+}
+
+/*=========================動態圖片================================*/
+
+.videoblock video
+{
+	width:30%;
+    opacity: 0.3; 
+	position:absolute;
+	left:0;
+	bottom:0;
+
+}
+
+
+
+
+
+/*=========================動態圖片================================*/
+
+
+
+
+
+
+
+/*=================================================================*/
+.hover 
+{
+	left:75%;
+	top:55%;
+}
+
+.hover img 
+{
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 3s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+.hover img:nth-of-type(2):hover
+{
+	opacity:0;
+}
+
+.hover2
+{
+	margin-top:30%;
+	margin-left:84%;	
+}
+
+.hover3
+{
+	top:10%;
+	left:84%;
+		
+}
+
+.linker
+{
+	width:30%;
+	list-style-type:none;
+    margin-top:-5%;
+}
+
+.topic
+{
+	width:20%;
+	margin-left:0%;
+	margin-top:-20px;
+	display:block;
+}
+
+.tab
+{
+	margin:20px 0px 0px -15px;
+}
+
+.tabText
+{
+	font-size:32px;
+	text-shadow:0px 0px 10px darkblue;
+	color:oldlace;
+	font-family:DFKai-sb;
+	text-decoration:none;
+}
+
+a.tabText:hover,a.tabText:active
+{
+	color:yellow;
+	opacity:1;
+    
+}
+
+
+</style>
+
+
+</head>
+
+<body>
+
+<div class="topic"><a href="index.html" title="回首頁"><img src="heard.png"></img></a></div>
+    
+<ul class="linker">
+  
+	
+
+
+<li class="tab"> <a class="tabText" href="Page1.html" >歷史概要與背景</a> </li>
+	<li class="tab"> <a class="tabText" href="Page2.html" >故事概要</a> </li>
+	<li class="tab"> <a class="tabText" href="Page3.html" >作品設定與特色</a> </li>
+	<li class="tab"> <a class="tabText" href="Page4.html" >名稱由來</a> </li>
+	<li class="tab"> <a class="tabText" href="Page5.html" >哆啦A夢道具列表</a> </li>
+    <li class="tab"> <a class="tabText" href="Page6.html" >關於我們</a> <li>
+</ul>
+	
+<div class="videoblock">
+	<video src="video1.mpg" autoplay loop ></video>
+</div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+/*   *, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}*/
+body 
+{
+    background-color:black;
+	background-image:url("TV.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% auto;
+}
+   .Item 
+   {
+     font-size: 1rem;
+     position: relative;
+	 max-width: 80%;
+	 height:60%;	 
+	 /* overflow: hidden; */
+	 margin: 20px auto;
+   }
+   .Txt 
+   {
+	 text-align:center;
+
+	 color:red;
+	 font-family:Microsoft JhengHei;
+   }
+   
+   .videoDiv
+   {
+	   text-align:center;
+   }
+.Img 
+{
+	 position: absolute;
+	 width: 15% ;
+	 height: auto;
+	 display:inline-block;
+	 
+	 right: 80%;
+	 bottom: 50%;
+	 max-width: 100%;
+	 max-height: 100%;
+	
+	 z-index:5;
+	 -webkit-overflow-scrolling: touch;
+	 -ms-overflow-style: none; /* remove scroll bar in IE */
+		
+ }
+
+ .topic
+{
+	width:20%;
+	margin-left:0%;
+	margin-top:-20px;
+	display:block;
+}
+h2
+{
+	margin-top:-20px;	
+}
+
+</style>
+</head>
+<body>
+
+<div class="topic"><a href="index.html" title="回首頁"><img src="heard.png"></img></a></div>
+
+<div>
+     <div class="Item">
+		<div class="Txt"><h2>故事概要</h2>
+    </div>		
+</div>
+
+<div class="videoDiv">
+	<video src="video2.mpg" autoplay loop ></video>
+</div>
+	  
+
+  </div>
+</body>
+</html>

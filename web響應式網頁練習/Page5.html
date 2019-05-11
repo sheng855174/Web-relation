@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+/*   *, *:before, *:after {
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+}*/
+body 
+{
+    counter-reset: count ;
+	background-image:url("page5.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-size:100% 100%;
+}
+   .Item 
+   {
+     font-size: 1rem;
+     position: relative;
+	 max-width: 80vw;
+	 height:25vh;
+	 margin:-60px auto;
+	 opacity: 0.2;
+	 background: white;
+	 border-radius:30em;
+   }
+   .Item2
+   {
+	 font-size: 1rem;
+     position: relative;
+	 max-width: 70vw;
+	 height:20vh;
+	 margin:auto;
+	 top:-15vh;
+	 opacity: 0.87;
+   }
+   .Txt 
+   {
+	 position: relative;
+	 max-width: 60% ;
+	 margin:10px;
+	 display:inline-block;
+	 left: 30%;
+	 color:red;
+	 font-family:Microsoft JhengHei;
+   }
+   .Txt:before 
+   {
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+	width:1.5rem;
+    background-color:greenyellow;
+    font-size: 1rem;
+	
+	border-radius: 50%;
+	counter-increment: count;
+	content: counter(count);
+   }
+   
+.Img 
+{
+	 position: absolute;
+	 width: 15% ;
+	 height: auto;
+	 display:inline-block;
+	 
+	 right: 80%;
+	 top: 10px;
+	 max-width: 100%;
+	 max-height: 100%;
+	
+		z-index:5;
+			-webkit-overflow-scrolling: touch ; //for cell phone
+			-ms-overflow-style: none; /* remove scroll bar in IE */
+ }
+
+ .topic
+{
+	width:20%;
+	margin-left:0%;
+	margin-top:-20px;
+	display:block;
+}
+.BigDivText
+{
+	position:relative;
+	display:inline-block;
+	width:70%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topic"><a href="index.html" title="回首頁"><img src="heard.png"></img></a></div>
+     
+		<div class="Item"></div>
+		<div class="Item2">
+			<article class="Txt"> <b><p>竹蜻蜓</p>只要把它放置在身體任何部分，就可依自己意思在天空中翱翔。內藏超小型電池，可時速 80 公里連續飛行 8 小時。若是間斷飛行，還可撐更久！</b> </article>
+			<img class = "Img" src="item1.png"/>
+		</div>
+
+		
+	 <div class="Item"></div>
+	 <div class="Item2">
+	 <article class="Txt"> <b><p>樵夫之泉</p>把東西丟到這個泉裡，女神就會出現。如果你說了實話，他就會給你一個更好、更新的東西。</b> </article>
+		<img class = "Img" src="item2.png"/>
+	 </div>
+	 
+	 <div class="Item"></div>
+	 <div class="Item2">
+	 <article class="Txt"> <b><p>時光包巾</p>它的功用實在太大了，包了的東西既可以變新，也可以變舊。</b> </article>
+		<img class = "Img" src="item3.png"/>
+	 </div>
+
+	 <div class="Item"></div>
+	 <div class="Item2">
+	 <article class="Txt"><b><p>翻譯蒟蒻</p>吃了這個蒟蒻，任何人說的任何話，我們都可以聽懂、而且可以溝通。</b></article>
+		<img class = "Img" src="item4.png"/>
+	 </div>
+
+	 <div class="Item"></div>
+	 <div class="Item2">
+	 <article class="Txt"><b><p>超人手套</P>把這手套套在手上，可以使出強大的力量。又名「超級手套」。</b></article>
+		<img class = "Img" src="item5.png"/>
+	 </div>
+	 
+	 <div class="Item"></div>
+	 <div class="Item2">
+	 <article class="Txt"><b><p>時光機</p>哆啦A夢的飛毯型時光機。以前是以兩根操縱桿操縱，現在則是以按鈕操作，也有聲控功能。可以往來於時空之間。</b></article>
+		<img class = "Img" src="item6.png"/>
+	 </div>
+</body>
+</html>
